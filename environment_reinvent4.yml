@@ -1,0 +1,37 @@
+# Conda env for REINVENT 4 + Dimorphite-DL ligand prep + ProLIF + Vina.
+# Sister env to `openmm_env` (which runs the WE pipeline).
+#
+# Create:   conda env create -f environment_reinvent4.yml
+# Activate: conda activate reinvent4
+#
+# Versions pinned from a working install on 2026-05-16.
+
+name: reinvent4
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Generation
+      - reinvent @ git+https://github.com/MolecularAI/REINVENT4.git
+      # Ligand prep
+      - dimorphite-dl==2.0.2
+      - rdkit==2025.9.6
+      - meeko==0.7.1
+      - openbabel-wheel==3.1.1.23
+      - gemmi
+      # Docking
+      - vina==1.2.7
+      # Interaction fingerprints
+      - prolif==2.1.0
+      # MD trajectory parsing
+      - mdanalysis>=2.10
+      # Analysis
+      - scipy
+      - scikit-learn
+      - pandas
+      - numpy
+      # Testing
+      - pytest

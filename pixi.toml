@@ -1,0 +1,95 @@
+# Pixi project file — α-syn × fasudil WE-MD + REINVENT pipeline.
+#
+# Two environments:
+#   - westpa  (Python 3.9): WESTPA propagation, MD analysis, ligand prep,
+#             docking (Vina), interaction fingerprints (ProLIF 2.0).
+#   - reinvent (Python 3.11): REINVENT 4 generative ML, Dimorphite-DL
+#             pKa-aware protonation, modern RDKit/Meeko stack.
+#
+# Usage:
+#   pixi install                       # bootstrap both envs + write lockfile
+#   pixi run -e westpa  pytest docking/test_ablation.py
+#   pixi run -e westpa  python3 docking/ablation_parallel.py
+#   pixi run -e reinvent reinvent docking/configs/smoke_sampling.toml -d cpu
+#   pixi run -e reinvent python3 docking/ligand_prep_v3.py --input X --output Y
+#
+# Versions chosen to match the working install captured on 2026-05-16.
+# The pixi.lock file (committed) is the single source of truth for reproducibility.
+
+[project]
+name = "asyn-fasudil-reinvent"
+version = "0.1.0"
+description = "Weighted-ensemble MD characterization of fasudil binding to α-synuclein, feeding REINVENT generative ML for novel α-syn binder design."
+authors = ["Anugraha Thyagaturu <anuthyagatur@ucdavis.edu>"]
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64"]
+
+# ──────────────────────────────────────────── shared deps ─────────────────────
+[dependencies]
+# (none — environment-specific below)
+
+# ───────────────────────────── WESTPA env (Python 3.9) ─────────────────────────
+[feature.westpa.dependencies]
+python = "3.9.*"
+parmed = "4.3.*"
+h5py = "*"
+numpy = "*"
+scipy = "*"
+scikit-learn = "*"
+pandas = "*"
+matplotlib = "*"
+mdanalysis = ">=2.2,<2.7"   # 2.7+ changed Universe API; keep 2.2-2.6 for parmed compat
+pytest = "*"
+
+[feature.westpa.pypi-dependencies]
+westpa = "==2022.11"
+rdkit = "*"                    # any version that pip resolves on py3.9
+meeko = "==0.7.1"
+"openbabel-wheel" = "==3.1.1.23"
+gemmi = "*"
+vina = "==1.2.7"
+prolif = "==2.0.3"             # last version supporting py3.9
+"dimorphite-dl" = "==1.2.4"    # last version supporting py3.9 (newer ≥2 require py3.10)
+sklearn-extra = "*"
+
+[environments.westpa]
+features = ["westpa"]
+solve-group = "westpa"
+
+# ─────────────────────────── REINVENT env (Python 3.11) ────────────────────────
+[feature.reinvent.dependencies]
+python = "3.11.*"
+numpy = "*"
+scipy = "*"
+scikit-learn = "*"
+pandas = "*"
+matplotlib = "*"
+mdanalysis = ">=2.10"
+pytest = "*"
+
+[feature.reinvent.pypi-dependencies]
+reinvent = { git = "https://github.com/MolecularAI/REINVENT4.git" }
+"dimorphite-dl" = "==2.0.2"     # latest, py3.10+ only
+rdkit = "==2025.9.6"            # constrained by dimorphite-dl 2.x
+meeko = "==0.7.1"
+"openbabel-wheel" = "==3.1.1.23"
+gemmi = "*"
+vina = "==1.2.7"
+prolif = "==2.1.0"
+
+[environments.reinvent]
+features = ["reinvent"]
+solve-group = "reinvent"
+
+# ─────────────────────────────────── tasks ────────────────────────────────────
+[tasks]
+test = "pixi run -e westpa pytest docking/test_ablation.py -v"
+test-quick = "pixi run -e westpa pytest docking/test_ablation.py -v -x"
+control = "pixi run -e westpa python3 docking/prep_and_dock.py"
+ablation = "pixi run -e westpa python3 docking/ablation_parallel.py"
+ablation-rescue = "pixi run -e westpa python3 docking/ablation_rescue.py"
+ctrl100 = "pixi run -e westpa python3 docking/control_100seed.py"
+prep-receptors = "pixi run -e westpa python3 docking/extract_ensemble.py"
+ref-plif = "pixi run -e westpa python3 docking/compute_reference_plif.py"
+mol2mol = "pixi run -e reinvent reinvent reinvent_work/mol2mol_fasudil.toml -d cpu"
+ligand-prep-v2 = "pixi run -e reinvent python3 docking/ligand_prep_v2.py"
