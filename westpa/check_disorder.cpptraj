@@ -1,0 +1,16 @@
+parm /home/anugraha/IDP/build/complex.prmtop
+# 1) bstate (the WE starting structure — should be helical)
+trajin bstates/bstate.rst7
+# 2) iter 1 sample (first seg, full 100 frames)
+trajin traj_segs/000001/000000/seg.nc
+# 3) iter 73 sample — pick a handful of segments
+trajin traj_segs/000073/000000/seg.nc
+trajin traj_segs/000073/000010/seg.nc
+trajin traj_segs/000073/000030/seg.nc
+trajin traj_segs/000073/000060/seg.nc
+trajin traj_segs/000073/000090/seg.nc
+
+# DSSP secondary structure on protein
+secstruct :1-140 out dssp_per_residue.dat sumout dssp_summary.dat
+run
+quit

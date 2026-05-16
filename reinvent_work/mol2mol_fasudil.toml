@@ -1,0 +1,15 @@
+# Mol2Mol sampling: 100 fasudil-like analogues from the high-similarity prior
+run_type = "sampling"
+device = "cpu"
+json_out_config = "mol2mol_fasudil.json"
+
+[parameters]
+model_file = "/home/anugraha/IDP/reinvent_priors/mol2mol_high_similarity.prior"
+smiles_file = "fasudil.smi"
+output_file = "mol2mol_fasudil.csv"
+
+sample_strategy = "multinomial"
+temperature = 1.0
+num_smiles = 100
+unique_molecules = true
+randomize_smiles = false

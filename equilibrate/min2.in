@@ -1,0 +1,9 @@
+Min2: unrestrained minimization (paper's protocol)
+ &cntrl
+  imin   = 1,
+  maxcyc = 5000, ncyc = 1000,
+  ntmin  = 1,
+  ntb    = 1,
+  cut    = 10.0,
+  ntpr   = 200,
+ /

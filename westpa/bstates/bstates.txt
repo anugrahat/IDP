@@ -1,0 +1,3 @@
+# bstate_name  probability  auxref
+# auxref is a path relative to bstates/  (see west.cfg data_refs.basis_state)
+bstate_unbound  1.0  bstate.rst7

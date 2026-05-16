@@ -1,0 +1,32 @@
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:453: UserWarning: 1 A^3 CRYST1 record, this is usually a placeholder. Unit cell dimensions will be set to None.
+  warnings.warn("1 A^3 CRYST1 record,"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/MOL2Parser.py:234: UserWarning: Unknown elements found for some atoms: {'ha', 'n3', 'hc', 'nb', 'o', 'h4', 'ca', 'hx', 'ny', 'sy', 'h1', 'hn', 'c3'}. These have been given an empty element record.
+  warnings.warn("Unknown elements found for some "
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: 
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:777: UserWarning: Unit cell dimensions not found. CRYST1 record set to unitary values.
+  warnings.warn("Unit cell dimensions not found. "
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'altLocs' Using default value of ' '
+  warnings.warn("Found no information for attr: '{}'"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'icodes' Using default value of ' '
+  warnings.warn("Found no information for attr: '{}'"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'chainIDs' Using default value of ''
+  warnings.warn("Found no information for attr: '{}'"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'occupancies' Using default value of '1.0'
+  warnings.warn("Found no information for attr: '{}'"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'tempfactors' Using default value of '0.0'
+  warnings.warn("Found no information for attr: '{}'"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'elements' Using default value of ' '
+  warnings.warn("Found no information for attr: '{}'"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'record_types' Using default value of 'ATOM'
+  warnings.warn("Found no information for attr: '{}'"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'formalcharges' Using default value of '0'
+  warnings.warn("Found no information for attr: '{}'"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1200: UserWarning: Found missing chainIDs. Corresponding atoms will use value of 'X'
+  warnings.warn("Found missing chainIDs."
+α-syn COM: (233.26, 30.12, -15.27) Å, max extent 94.0 Å
+fasudil current COM: (-0.00, -0.00, 0.18) Å, extent 5.5 Å
+translation vector: (337.27, 30.12, -15.45) Å
+min α-syn → fasudil heavy-atom distance after translation: 79.57 Å (target ≥ 10.0)
+wrote /home/anugraha/IDP/build/fasudil_placed.mol2
+wrote /home/anugraha/IDP/build/asyn_fasudil_placed.pdb (visualization only)

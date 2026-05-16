@@ -1,0 +1,11 @@
+receptor,iter,seg,frame,cluster_size,weight
+receptor_01.pdb,58,79,15,1185,0.1607
+receptor_02.pdb,44,78,11,780,0.1058
+receptor_03.pdb,28,39,96,545,0.0739
+receptor_04.pdb,51,89,36,577,0.0782
+receptor_05.pdb,38,85,79,1193,0.1618
+receptor_06.pdb,46,83,53,1078,0.1462
+receptor_07.pdb,40,79,42,1065,0.1444
+receptor_08.pdb,19,47,12,75,0.0102
+receptor_09.pdb,57,72,24,837,0.1135
+receptor_10.pdb,29,84,70,39,0.0053

@@ -1,0 +1,17 @@
+NPT equilibration chunk: 200 ps, 300 K, 0.1 kcal backbone restraint, MC barostat
+ &cntrl
+  imin   = 0,
+  irest  = 1, ntx = 5,
+  nstlim = 100000, dt = 0.002,             ! 100k × 2 fs = 200 ps
+  ntc    = 2, ntf = 2,
+  cut    = 10.0,
+  ntb    = 2,
+  ntp    = 1, barostat = 2, pres0 = 1.0, mcbarint = 100,   ! MC barostat — handles big density changes on GPU
+  ntt    = 3, gamma_ln = 2.0, temp0 = 300.0,
+  ntr    = 1,
+  restraint_wt = 0.1,
+  restraintmask = "(:1-140) & @N,CA,C,O",
+  ig     = -1,
+  ntpr   = 1000, ntwx = 1000, ntwr = 25000,
+  iwrap  = 1, ioutfm = 1,
+ /

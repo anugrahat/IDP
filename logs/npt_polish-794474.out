@@ -1,0 +1,64 @@
+Polish job 794474 on sapphire-0 at Sat May 16 00:29:30 UTC 2026
+GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-b7b4c9bc-a6b0-8bd2-075e-e3d9f299f47f)
+--- chunk 2 restart from chunks/npt_01.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =     15577.1697
+                                                    Density    =         0.0182
+--- chunk 3 restart from chunks/npt_02.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1150.1178
+                                                    Density    =         0.0014
+--- chunk 4 restart from chunks/npt_03.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =       732.7611
+                                                    Density    =         0.0009
+--- chunk 5 restart from chunks/npt_04.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =       986.6232
+                                                    Density    =         0.0012
+--- chunk 6 restart from chunks/npt_05.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1095.0921
+                                                    Density    =         0.0014
+--- chunk 7 restart from chunks/npt_06.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1355.4313
+                                                    Density    =         0.0017
+--- chunk 8 restart from chunks/npt_07.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1394.3039
+                                                    Density    =         0.0017
+--- chunk 9 restart from chunks/npt_08.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1266.4271
+                                                    Density    =         0.0016
+--- chunk 10 restart from chunks/npt_09.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1176.0409
+                                                    Density    =         0.0015
+--- chunk 11 restart from chunks/npt_10.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =       837.1091
+                                                    Density    =         0.0010
+--- chunk 12 restart from chunks/npt_11.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1206.8395
+                                                    Density    =         0.0015
+--- chunk 13 restart from chunks/npt_12.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1421.0277
+                                                    Density    =         0.0018
+--- chunk 14 restart from chunks/npt_13.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1426.1633
+                                                    Density    =         0.0018
+--- chunk 15 restart from chunks/npt_14.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1280.8500
+                                                    Density    =         0.0016
+--- chunk 16 restart from chunks/npt_15.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1180.3300
+                                                    Density    =         0.0015
+--- chunk 17 restart from chunks/npt_16.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1156.4214
+                                                    Density    =         0.0014
+--- chunk 18 restart from chunks/npt_17.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1047.0763
+                                                    Density    =         0.0013
+--- chunk 19 restart from chunks/npt_18.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1625.4002
+                                                    Density    =         0.0020
+--- chunk 20 restart from chunks/npt_19.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1093.6411
+                                                    Density    =         0.0014
+--- chunk 21 restart from chunks/npt_20.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =      1111.7100
+                                                    Density    =         0.0014
+=== final rst7: chunks/npt_21.rst7 ===
+Polish complete at Sat May 16 01:11:16 UTC 2026 — bstate.rst7 updated to final

@@ -1,0 +1,6 @@
+Equil job 794345 on sapphire-0 at Fri May 15 22:46:09 UTC 2026
+GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-b7b4c9bc-a6b0-8bd2-075e-e3d9f299f47f)
+=== 1) Min1 (10 kcal heavy-atom restrained) ===
+=== 2) Min2 (unrestrained) ===
+=== 3) Heat1 (NVT 0→150 K, 50 ps) ===
+=== 4) Heat2 (NVT 150→300 K, 50 ps) ===

@@ -1,0 +1,12 @@
+Min1: 10 kcal/mol·Å² restraint on all heavy atoms (paper's protocol)
+ &cntrl
+  imin   = 1,
+  maxcyc = 5000, ncyc = 1000,
+  ntmin  = 1,
+  ntb    = 1,
+  cut    = 10.0,
+  ntr    = 1,
+  restraint_wt = 10.0,
+  restraintmask = "(:1-140 | :FAS) & !@H=",
+  ntpr   = 200,
+ /

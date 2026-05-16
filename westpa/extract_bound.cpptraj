@@ -1,0 +1,19 @@
+# Extract the best bound fasudil-α-syn pose for visualization.
+# Best frame across all WE: iter 28, seg 39, frame 92 (0-indexed)
+# → cpptraj 1-indexed frame 93
+parm /home/anugraha/IDP/build/complex.prmtop
+trajin /home/anugraha/IDP/westpa/traj_segs/000028/000039/seg.nc 93 93 1
+
+# Re-image so protein + ligand land near each other in the unit cell
+autoimage :1-140,FAS firstatom
+
+# Two outputs:
+# 1) Full system (protein + ligand + waters + ions) — useful for force-field-accurate poses
+trajout /home/anugraha/IDP/bound_pose_full.pdb pdb
+run
+
+# 2) Protein + ligand only (clean visualization)
+strip :WAT,Na+,Cl-,K+
+trajout /home/anugraha/IDP/bound_pose_protein_ligand.pdb pdb
+run
+quit

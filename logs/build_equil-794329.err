@@ -1,0 +1,12 @@
+Module amber-24-ucdhpc-20.04 loaded.
+
+NOTE, by loading this module, or using this software (Amber24 + AmberTools25), you agree to
+abide by the AMBER24 Software License, as shown on: http://ambermd.org/LicenseAmber22.pdf
+
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:453: UserWarning: 1 A^3 CRYST1 record, this is usually a placeholder. Unit cell dimensions will be set to None.
+  warnings.warn("1 A^3 CRYST1 record,"
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:777: UserWarning: Unit cell dimensions not found. CRYST1 record set to unitary values.
+  warnings.warn("Unit cell dimensions not found. "
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/coordinates/PDB.py:1153: UserWarning: Found no information for attr: 'formalcharges' Using default value of '0'
+  warnings.warn("Found no information for attr: '{}'"
+slurmstepd: error: *** JOB 794329 ON sapphire-0 CANCELLED AT 2026-05-15T21:51:45 ***

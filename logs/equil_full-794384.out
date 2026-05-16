@@ -1,0 +1,11 @@
+Equil job 794384 on sapphire-0 at Sat May 16 00:17:22 UTC 2026
+GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-b7b4c9bc-a6b0-8bd2-075e-e3d9f299f47f)
+=== 1) Min1 (10 kcal heavy-atom restrained) ===
+=== 2) Min2 (unrestrained) ===
+=== 3) Heat1 (NVT 0→150 K, 50 ps) ===
+=== 4) Heat2 (NVT 150→300 K, 50 ps) ===
+=== 5) Cascade NPT: 60 × 50 ps = 3 ns (short chunks to dodge GPU box-dim limit during compression) ===
+--- chunk 1 of 60 — restart from heat2.rst7 ---
+ EKCMT  =         0.0000  VIRIAL  =         0.0000  VOLUME     =     62459.2396
+                                                    Density    =         0.0121
+--- chunk 2 of 60 — restart from chunks/npt_01.rst7 ---

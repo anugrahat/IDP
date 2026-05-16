@@ -1,0 +1,21 @@
+Heat1: NVT 0→150 K, 50 ps, Langevin γ=2.0, heavy-atom restraint 10→6 kcal/mol·Å²
+ &cntrl
+  imin   = 0,
+  irest  = 0, ntx = 1,
+  nstlim = 25000, dt = 0.002,
+  ntc    = 2, ntf = 2,
+  cut    = 10.0,
+  ntb    = 1,
+  ntt    = 3, gamma_ln = 2.0,
+  tempi  = 0.0, temp0 = 150.0,
+  ntr    = 1,
+  restraint_wt = 8.0,
+  restraintmask = "(:1-140 | :FAS) & !@H=",
+  nmropt = 1,
+  ig     = -1,
+  ntpr   = 500, ntwx = 500, ntwr = 5000,
+  iwrap  = 1, ioutfm = 1,
+ /
+ &wt type='TEMP0',  istep1=0, istep2=25000, value1=0.0,  value2=150.0 /
+ &wt type='REST',   istep1=0, istep2=25000, value1=10.0, value2=6.0 /
+ &wt type='END' /

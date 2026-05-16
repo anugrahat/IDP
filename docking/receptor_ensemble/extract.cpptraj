@@ -1,0 +1,16 @@
+parm /home/anugraha/IDP/build/complex.prmtop
+trajin /home/anugraha/IDP/westpa/traj_segs/000058/000079/seg.nc 16 16 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000044/000078/seg.nc 12 12 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000028/000039/seg.nc 97 97 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000051/000089/seg.nc 37 37 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000038/000085/seg.nc 80 80 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000046/000083/seg.nc 54 54 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000040/000079/seg.nc 43 43 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000019/000047/seg.nc 13 13 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000057/000072/seg.nc 25 25 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000029/000084/seg.nc 71 71 1
+autoimage :1-140,FAS firstatom
+strip :WAT,Na+,Cl-,K+,FAS
+trajout /home/anugraha/IDP/docking/receptor_ensemble/receptor_ensemble.pdb pdb multi
+run
+quit

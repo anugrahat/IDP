@@ -1,0 +1,44 @@
+## Solvate 1XQ8 α-syn + fasudil with TIP4P-D, neutralize, 0.1 M NaCl
+## Loads protein and ligand as separate units (avoids PDB atom-name collisions
+## for the GAFF2-typed ligand). fasudil_placed.mol2 already has the translated
+## coordinates from place_fasudil.py.
+
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/cmd
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/parm
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/lib
+
+source leaprc.protein.ff99SBdisp
+source leaprc.water.tip4pd_disp
+source leaprc.gaff2
+
+set default PBradii mbondi3
+set default FlexibleWater on
+
+# --- α-syn (1XQ8 cleaned) ---
+asyn = loadpdb /home/anugraha/IDP/inputs/protein/1XQ8_amber.pdb
+
+# --- Fasudil: load GAFF2 frcmod first, then placed mol2 (preserves antechamber atom names) ---
+loadamberparams /home/anugraha/IDP/inputs/ligand/ac_work/fasudil_gaff2.frcmod
+FAS = loadmol2 /home/anugraha/IDP/build/fasudil_placed.mol2
+
+# --- Combine into one unit ---
+complex = combine { asyn FAS }
+
+# --- Solvate with TIP4P-D, rectangular box, 10 Å buffer ---
+# IMPORTANT: use TIP4PDBOX (the pre-equilibrated 216-water box template),
+# NOT T4D (the single-water residue). T4D gives density ~0.6 (loose packing);
+# TIP4PDBOX gives the proper density ~0.96 because waters are pre-equilibrated as a block.
+solvateBox complex TIP4PDBOX 10.0
+
+# --- Neutralize (8 Na+ for net -8 charge: -9 α-syn + +1 fasudil) ---
+addIonsRand complex Na+ 0
+
+# --- 0.1 M NaCl: add 80 Na+/Cl- pairs (≈100 mM for ~44k waters) ---
+addIonsRand complex Na+ 80
+addIonsRand complex Cl- 80
+
+charge complex
+
+saveAmberParm complex /home/anugraha/IDP/build/complex.prmtop /home/anugraha/IDP/build/complex.rst7
+savepdb complex /home/anugraha/IDP/build/complex.pdb
+quit

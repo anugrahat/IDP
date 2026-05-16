@@ -1,0 +1,85 @@
+# Large data / trajectory output — never commit
+westpa/traj_segs/
+westpa/seg_logs/
+westpa/istates/
+westpa/west.h5
+westpa/*.h5
+westpa/west_zmq_info.json
+westpa/west.log
+westpa/logs/
+westpa/check_disorder_*.out
+westpa/dssp_*.dat
+
+# AMBER / MD intermediates (large binaries)
+*.nc
+*.rst7
+*.crd
+*.mdinfo
+*.mdcrd
+*.dcd
+*.xtc
+*.trr
+build/complex.prmtop
+build/complex_noWAT.pdb
+build/asyn_vacuum.prmtop
+build/asyn_vacuum.inpcrd
+
+# Equilibration trajectory output
+equilibrate/*.nc
+equilibrate/*.rst7
+equilibrate/heat*.out
+equilibrate/npt*.out
+equilibrate/min*.out
+
+# Cloned external repos (don't commit other people's code)
+reinvent_repo/
+Vina-GPU-2.1/
+dimorphite_repo/
+scripts/reference/
+inputs/ff/Force-Fields/
+
+# Big binaries / pdfs
+*.pdf
+idea.md.pdf
+build/complex.pdb
+build/leap.log
+build/*.png
+
+# Large pretrained models
+reinvent_priors/
+*.prior
+*.chkpt
+
+# Docking intermediates (poses are big; keep summary only)
+docking/ablation_poses/
+docking/poses/*.pdbqt
+docking/poses/*_pose*.pdb
+docking/poses/*_pose*.sdf
+docking/candidates/
+docking/receptor_ensemble/receptor_*_orig.pdb
+docking/receptor_ensemble/receptor_*_noH.pdb
+docking/plif/bound_*.pdb
+docking/plif/extract_with_lig.cpptraj
+docking/logs/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# REINVENT output
+reinvent_work/sampling.csv
+reinvent_work/smoke_sampling.csv
+reinvent_work/tb_logs/
+*.json
+
+# Bound pose intermediates (keep just the canonical one)
+bound_pose_full.pdb
+
+# Tarballs
+*.tar.gz
+
+# Misc
+*.swp
+.DS_Store

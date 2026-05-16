@@ -1,0 +1,16 @@
+WESTPA segment: 100 ps NPT, output every 1 ps
+ &cntrl
+  imin   = 0,
+  irest  = 1, ntx = 5,    ! restart from parent .rst7 with velocities
+  nstlim = 50000, dt = 0.002,  ! 50,000 steps × 2 fs = 100 ps
+  ntc    = 2, ntf = 2,
+  cut    = 9.0,
+  ntb    = 2,             ! constant pressure PBC
+  ntp    = 1, barostat = 2, pres0 = 1.0, taup = 2.0,  ! Monte Carlo barostat
+  ntt    = 3, gamma_ln = 2.0, temp0 = 300.0,           ! Langevin 300 K
+  ntpr   = 500,  ntwx = 500,                            ! log+traj every 1 ps
+  ntwr   = 50000,
+  iwrap  = 1,
+  ig     = -1,
+  ioutfm = 1,                                           ! NetCDF traj
+ /

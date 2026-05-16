@@ -1,0 +1,13 @@
+# REINVENT 4 smoke test: sample 100 SMILES from the de novo prior.
+# Used to verify the install works end-to-end before building scoring chains.
+
+run_type = "sampling"
+device = "cuda:0"
+json_out_config = "smoke_sampling.json"
+
+[parameters]
+model_file = "/home/anugraha/IDP/reinvent_priors/reinvent.prior"
+output_file = "smoke_sampling.csv"
+num_smiles = 100
+unique_molecules = true
+randomize_smiles = true

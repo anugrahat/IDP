@@ -1,0 +1,15 @@
+Equil-continue job 794331 on sapphire-0 at Fri May 15 22:12:34 UTC 2026
+GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-b7b4c9bc-a6b0-8bd2-075e-e3d9f299f47f)
+=== chunk 1 of 20 — restart from equil_npt.rst7 ===
+ EKCMT  =       142.7238  VIRIAL  =      2184.2667  VOLUME     =    103842.0692
+                                                    Density    =         0.0481
+=== chunk 2 of 20 — restart from chunks/npt_01.rst7 ===
+ EKCMT  =       199.8224  VIRIAL  =      2777.8250  VOLUME     =      1180.3580
+                                                    Density    =         0.0006
+=== chunk 3 of 20 — restart from chunks/npt_02.rst7 ===
+ EKCMT  =       181.1441  VIRIAL  =      2498.9459  VOLUME     =       946.6032
+                                                    Density    =         0.0005
+=== chunk 4 of 20 — restart from chunks/npt_03.rst7 ===
+ EKCMT  =       188.7687  VIRIAL  =      2602.1028  VOLUME     =      1204.3994
+                                                    Density    =         0.0006
+=== chunk 5 of 20 — restart from chunks/npt_04.rst7 ===

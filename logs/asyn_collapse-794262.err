@@ -1,0 +1,2 @@
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+slurmstepd: error: *** JOB 794262 ON sapphire-0 CANCELLED AT 2026-05-15T21:44:15 ***

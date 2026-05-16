@@ -1,0 +1,35 @@
+## Build full-length α-synuclein (UniProt P37840, 140 aa) in extended conformation
+## using a99SB-disp + TIP4P-D.  Writes a vacuum PDB; solvation happens in the
+## combined-system tleap after fasudil is parameterized.
+
+# add a99SBdisp param/lib/cmd directories to the leap search path
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/cmd
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/parm
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/lib
+
+source leaprc.protein.ff99SBdisp
+source leaprc.water.tip4pd_disp
+
+# GB-Neck2 (igb=8) requires mbondi3 radii — set BEFORE building the unit
+set default PBradii mbondi3
+
+# α-syn sequence MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK
+#                EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP
+#                DNEAYEMPSEEGYQDYEPEA
+asyn = sequence {
+  MET ASP VAL PHE MET LYS GLY LEU SER LYS ALA LYS GLU GLY VAL VAL ALA ALA ALA GLU
+  LYS THR LYS GLN GLY VAL ALA GLU ALA ALA GLY LYS THR LYS GLU GLY VAL LEU TYR VAL
+  GLY SER LYS THR LYS GLU GLY VAL VAL HIE GLY VAL ALA THR VAL ALA GLU LYS THR LYS
+  GLU GLN VAL THR ASN VAL GLY GLY ALA VAL VAL THR GLY VAL THR ALA VAL ALA GLN LYS
+  THR VAL GLU GLY ALA GLY SER ILE ALA ALA ALA THR GLY PHE VAL LYS LYS ASP GLN LEU
+  GLY LYS ASN GLU GLU GLY ALA PRO GLN GLU GLY ILE LEU GLU ASP MET PRO VAL ASP PRO
+  ASP ASN GLU ALA TYR GLU MET PRO SER GLU GLU GLY TYR GLN ASP TYR GLU PRO GLU ALA
+}
+
+savepdb asyn /home/anugraha/IDP/build/asyn_extended.pdb
+saveamberparm asyn /home/anugraha/IDP/build/asyn_vacuum.prmtop /home/anugraha/IDP/build/asyn_vacuum.inpcrd
+
+# net charge check
+charge asyn
+
+quit

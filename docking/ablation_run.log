@@ -1,0 +1,16 @@
+/home/anugraha/.local/lib/python3.9/site-packages/prolif/datafiles.py:3: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import resource_filename
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 16 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 17 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 16 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 17 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 17 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 17 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 21 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 19 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 7 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 0 N, 6, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 0 N, 6, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 17 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 17 N, 5, is greater than permitted
+[RDKit] ERROR:[15:53:03] Explicit valence for atom # 18 N, 5, is greater than permitted
