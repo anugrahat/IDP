@@ -215,6 +215,24 @@ def test_tanimoto_empty_pose_is_zero():
 
 # ────────────────────────────── stage 6: END-TO-END ──────────────────────
 
+def test_pdbqt_to_rdkit_preserves_smiles():
+    """
+    Critical: a docked pose PDBQT, when round-tripped back to RDKit, MUST give
+    the same SMILES as the original ligand. obabel breaks this for rotatable
+    bond splits; Meeko preserves it.
+    """
+    from meeko import PDBQTMolecule, RDKitMolCreate
+    pose_pdbqt = ROOT / "ablation_poses/cand19_receptor_09.pdbqt"
+    if not pose_pdbqt.exists():
+        pytest.skip(f"need {pose_pdbqt}")
+    pmol = PDBQTMolecule.from_file(str(pose_pdbqt))
+    mols = RDKitMolCreate.from_pdbqt_mol(pmol)
+    assert len(mols) >= 1
+    smi = Chem.MolToSmiles(Chem.RemoveHs(mols[0]))
+    expected = "O=S(=O)(c1ccnc2ccc(Cl)cc12)N1CCC[NH2+]CC1"
+    assert smi == expected, f"PDBQT→RDKit corrupted ligand: got {smi}, want {expected}"
+
+
 def test_fasudil_self_dock_recovers_some_reference_contacts():
     """
     Critical: docking fasudil back into receptor_03 (its OWN bound-family

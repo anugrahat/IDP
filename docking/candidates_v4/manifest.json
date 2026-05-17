@@ -1,0 +1,388 @@
+[
+  {
+    "cand_idx": 0,
+    "parent_smiles": "CN1CCCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "C[NH+]1CCCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand00_var00_chg+1.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "CN1CCCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand00_var01_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 1,
+    "parent_smiles": "CN1CCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "C[NH+]1CCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand01_var00_chg+1.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "CN1CCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand01_var01_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 2,
+    "parent_smiles": "NC1CCN(S(=O)(=O)c2ccnc3ccccc23)C1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "NC1CCN(S(=O)(=O)c2ccnc3ccccc23)C1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand02_var00_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "[NH3+]C1CCN(S(=O)(=O)c2ccnc3ccccc23)C1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand02_var01_chg+1.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 3,
+    "parent_smiles": "NC1CCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "NC1CCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand03_var00_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "[NH3+]C1CCN(S(=O)(=O)c2ccnc3ccccc23)CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand03_var01_chg+1.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 4,
+    "parent_smiles": "O=S(=O)(NC1CCNCC1)c1ccnc2ccccc12",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(NC1CCNCC1)c1ccnc2ccccc12",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand04_var00_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(NC1CC[NH2+]CC1)c1ccnc2ccccc12",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand04_var01_chg+1.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 5,
+    "parent_smiles": "O=S(=O)(c1cccc2ccccc12)N1CCCNCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1cccc2ccccc12)N1CCCNCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand05_var00_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1cccc2ccccc12)N1CCC[NH2+]CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand05_var01_chg+1.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 6,
+    "parent_smiles": "O=S(=O)(c1cccc2cccnc12)N1CCCNCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1cccc2cccnc12)N1CCC[NH2+]CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand06_var00_chg+1.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1cccc2cccnc12)N1CCCNCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand06_var01_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 7,
+    "parent_smiles": "O=S(=O)(c1cccc2ncccc12)N1CCCNCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1cccc2ncccc12)N1CCC[NH2+]CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand07_var00_chg+1.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1cccc2ncccc12)N1CCCNCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand07_var01_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 8,
+    "parent_smiles": "O=S(=O)(c1cccc2ncccc12)N1CCNCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1cccc2ncccc12)N1CC[NH2+]CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand08_var00_chg+1.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1cccc2ncccc12)N1CCNCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand08_var01_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 9,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccc(Cl)cc12)N1CCCNCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccc(Cl)cc12)N1CCCNCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand09_var00_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1ccnc2ccc(Cl)cc12)N1CCC[NH2+]CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand09_var01_chg+1.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 10,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand10_var00_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 11,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCC2(CCNCC2)C1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCC2(CCNCC2)C1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand11_var00_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCC2(CC[NH2+]CC2)C1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand11_var01_chg+1.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 12,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCC(N2CCNCC2)C1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCC([NH+]2CC[NH2+]CC2)C1",
+        "charge": 2,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand12_var00_chg+2.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCC(N2CCNCC2)C1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand12_var01_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 2,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCC(N2CC[NH2+]CC2)C1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand12_var02_chg+1.pdbqt"
+      },
+      {
+        "var_idx": 3,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCC([NH+]2CCNCC2)C1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand12_var03_chg+1.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 13,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand13_var00_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 14,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand14_var00_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 15,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCNC(CO)C1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCNC(CO)C1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand15_var00_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCC[NH2+]C(CO)C1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand15_var01_chg+1.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 16,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCNCCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCC[NH2+]CCC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand16_var00_chg+1.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCCNCCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand16_var01_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 17,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCNCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CC[NH2+]CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand17_var00_chg+1.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCNCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand17_var01_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 18,
+    "parent_smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCOCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1ccnc2ccccc12)N1CCOCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand18_var00_chg+0.pdbqt"
+      }
+    ]
+  },
+  {
+    "cand_idx": 19,
+    "parent_smiles": "O=S(=O)(c1cnc2ccccc2c1)N1CCCNCC1",
+    "variants": [
+      {
+        "var_idx": 0,
+        "smiles": "O=S(=O)(c1cnc2ccccc2c1)N1CCCNCC1",
+        "charge": 0,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand19_var00_chg+0.pdbqt"
+      },
+      {
+        "var_idx": 1,
+        "smiles": "O=S(=O)(c1cnc2ccccc2c1)N1CCC[NH2+]CC1",
+        "charge": 1,
+        "reason": "all sites OK",
+        "pdbqt": "candidates_v4/cand19_var01_chg+1.pdbqt"
+      }
+    ]
+  }
+]

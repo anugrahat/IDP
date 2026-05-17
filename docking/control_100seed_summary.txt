@@ -1,0 +1,5 @@
+              n  hits  hit_rate  mean_dist    mean_E
+condition                                           
+A_biased   2000  1770     0.885   7.899645 -3.048026
+A_blind    2000   116     0.058  89.291896 -2.618335
+C_biased   2000  2000     1.000   6.824949 -2.776361

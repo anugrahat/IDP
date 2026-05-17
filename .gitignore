@@ -56,8 +56,15 @@ docking/poses/*.pdbqt
 docking/poses/*_pose*.pdb
 docking/poses/*_pose*.sdf
 docking/candidates/
+docking/candidates_v2/
+docking/candidates_v3/*.pdbqt
+docking/candidates_v4/*.pdbqt
+docking/stage2_poses/
+docking/stage5_poses/
+docking/control_100seed_poses/
 docking/receptor_ensemble/receptor_*_orig.pdb
 docking/receptor_ensemble/receptor_*_noH.pdb
+docking/receptor_ensemble/receptor_*.pdbqt
 docking/plif/bound_*.pdb
 docking/plif/extract_with_lig.cpptraj
 docking/logs/
