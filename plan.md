@@ -2,7 +2,29 @@
 
 **Goal:** Use weighted-ensemble MD to characterize fasudil binding to α-synuclein, then use that data to drive REINVENT to generate novel α-syn binders that beat fasudil on affinity, residence time, and binding-mode fidelity.
 
-**Sprint start:** 2026-05-15 · **Current date:** 2026-05-16
+**Sprint start:** 2026-05-15 · **Last updated:** 2026-05-16 21:55
+
+## Status snapshot (2026-05-16 evening)
+
+| Pipeline stage | Status |
+|---|---|
+| WE production (job 794545, 7-day budget) | running, iter 126/500 |
+| 100-seed docking control (paper figure) | ✅ done — A_blind 5.8%, A_biased 88.5%, C_biased 100% hit rate to Y133/D135/Y136 |
+| WE-weighted conformational PCA | ✅ done — 10 PCA clusters, **cluster_09 = sole bound state (6.12% bound, 4.8% pop)** |
+| Reference PLIF computation | ✅ done — TYR133 PiStacking 0.63, hydrophobic 0.99 |
+| 172-candidate REINVENT generation (Mol2Mol high-sim + medium-sim) | ✅ done — Tanimoto 0.25–0.89 to fasudil |
+| Stage 5 v2 scoring-chain ablation (10-receptor) | ✅ done — ρ(SC1, SC4) = 0.917, top-5 overlap 2/5 |
+| Stage 5 v2 ablation with **single PCA c09 receptor** | ✅ done — **ρ(SC1, SC4_c09) = 0.746, top-5 overlap 1/5** (much sharper signal) |
+| Pose-PDBQT-to-RDKit verified via Meeko | ✅ |
+| Test suite | 15/15 passing |
+
+### Headline finding for the paper
+
+> **PCA cluster_09** is the single conformational state of α-syn that supports fasudil binding (0% bound in all other 9 clusters, 6.12% bound in C9). Using c09 alone as the WE-aware docking receptor gives a **dramatically sharper "WE matters" signal** than the 10-contact-map ensemble (ρ vs naive 1XQ8: 0.746 vs 0.917; top-5 overlap 1/5 vs 2/5). The PLIF Tanimoto dynamic range is 2× wider (max 0.59 vs 0.38). For Task #24, use c09 as the reward receptor, not the 10-ensemble.
+
+### Notable novel-scaffold hit from c09 ablation
+
+**cand 4** (`CC(CC1CCN(C(=O)c2csc3ccccc23)CC1)N1CCNCC1`) — benzothiophene-amide + piperidine + piperazine. PLIF_c09 = 0.484 (highest in top-5), Vina = −5.88. Tanimoto to fasudil only 0.24 — a **genuine scaffold-hop hit**, not a fasudil analogue. Worth deeper investigation (Task #28).
 
 ---
 

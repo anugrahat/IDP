@@ -1,0 +1,8 @@
+Minimization stage 2: no restraints (relax everything)
+&cntrl
+   imin=1, maxcyc=5000, ncyc=2000,
+   ntb=1, ntp=0, cut=10.0, ntr=0,
+   ntpr=500,
+/
+&end
+END

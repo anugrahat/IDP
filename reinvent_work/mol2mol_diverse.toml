@@ -1,0 +1,17 @@
+# Mol2Mol diverse sampling: 200 fasudil-related analogues from medium-similarity prior
+# Higher temperature (1.5) for wider exploration of chemistry space.
+
+run_type = "sampling"
+device = "cpu"
+json_out_config = "mol2mol_diverse.json"
+
+[parameters]
+model_file = "/home/anugraha/IDP/reinvent_priors/mol2mol_medium_similarity.prior"
+smiles_file = "fasudil.smi"
+output_file = "mol2mol_diverse.csv"
+
+sample_strategy = "multinomial"
+temperature = 1.5            # higher T = more exploration
+num_smiles = 200
+unique_molecules = true
+randomize_smiles = false

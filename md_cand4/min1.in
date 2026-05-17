@@ -1,0 +1,9 @@
+Minimization stage 1: restrain protein + ligand heavy atoms (relax waters/ions)
+&cntrl
+   imin=1, maxcyc=2000, ncyc=1000,
+   ntb=1, ntp=0, cut=10.0,
+   ntr=1, restraint_wt=10.0, restraintmask=':1-141 & !@H=',
+   ntpr=200,
+/
+&end
+END

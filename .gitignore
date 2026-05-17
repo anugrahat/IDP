@@ -90,3 +90,49 @@ bound_pose_full.pdb
 # Misc
 *.swp
 .DS_Store
+
+# MD intermediates (large; reproducible from inputs + sbatch)
+md_cand4/*.nc
+md_cand4/*.rst7
+md_cand4/heat.out
+md_cand4/equil.out
+md_cand4/prod.out
+md_cand4/min1.out
+md_cand4/min2.out
+md_cand4/*.mdinfo
+md_cand4/sqm.out
+md_cand4/cand4_traj_conect.pdb
+md_cand4/cand4_protein_traj.pdb
+md_cand4/cand4_with_site*.pdb
+md_cand4/cand4_ligand*.pdb
+md_cand4/complex_cand4.prmtop
+md_cand4/complex_cand4.pdb
+md_fasudil/*.nc
+md_fasudil/*.rst7
+md_fasudil/*.out
+md_fasudil/*.mdinfo
+md_fasudil/sqm.in
+md_fasudil/complex_fasudil.prmtop
+md_fasudil/complex_fasudil.pdb
+
+
+# Large PCA outputs (>50MB; regenerable from pca_analysis_parallel.py)
+conformational_ensemble/data/features.npy
+conformational_ensemble/data/west_snapshot.h5
+conformational_ensemble/data/frame_meta.csv
+conformational_ensemble/data/pca.npz
+
+
+# v2/v4_full/c09 pose directories (regenerable, large)
+docking/stage5_v2_poses/
+docking/candidates_v4_full/*.pdbqt
+docking/c09_poses/
+docking/cand4_val_*.pdbqt
+docking/cand4_validation.pdbqt
+docking/c09_receptor.pdbqt
+docking/c09_receptor_noH.pdb
+docking/c09_receptor.pdb
+docking/fasudil_on_c09.pdbqt
+md_cand4/leap.log
+md_fasudil/leap.log
+

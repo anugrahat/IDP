@@ -1,0 +1,16 @@
+parm /home/anugraha/IDP/build/complex.prmtop
+trajin /home/anugraha/IDP/westpa/traj_segs/000083/000002/seg.nc 41 41 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000008/000047/seg.nc 71 71 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000049/000005/seg.nc 1 1 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000114/000030/seg.nc 91 91 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000026/000005/seg.nc 61 61 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000034/000001/seg.nc 1 1 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000006/000024/seg.nc 81 81 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000062/000056/seg.nc 91 91 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000052/000031/seg.nc 51 51 1
+trajin /home/anugraha/IDP/westpa/traj_segs/000050/000092/seg.nc 1 1 1
+autoimage :1-140,FAS firstatom
+strip :WAT,Na+,Cl-,K+
+trajout /home/anugraha/IDP/conformational_ensemble/representatives/cluster.pdb pdb multi
+run
+quit

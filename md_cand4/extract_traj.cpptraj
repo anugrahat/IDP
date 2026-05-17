@@ -1,0 +1,23 @@
+## Extract cand 4 ligand trajectory + binding-site residues for visualization
+
+parm /home/anugraha/IDP/md_cand4/complex_cand4.prmtop
+trajin /home/anugraha/IDP/md_cand4/prod.nc 1 last 5    # every 5th frame (~50 ps stride → 200 frames in 10 ns)
+
+# Auto-image: keep protein + ligand together across periodic box
+autoimage :1-141 firstatom
+
+# RMS-align on protein backbone so the ligand trajectory looks meaningful
+rms first :1-140 & @CA
+
+# Save the ligand-only trajectory (small, easy to load in PyMOL)
+strip !:UNL
+trajout /home/anugraha/IDP/md_cand4/cand4_ligand_only.pdb pdb multi
+run
+
+# Reset, do binding-site context (ligand + Y133/Y136/E130/D135/E137 sidechains)
+unstrip
+strip !(:UNL,125,130,133,134,135,136,137)
+trajout /home/anugraha/IDP/md_cand4/cand4_with_site.pdb pdb multi
+run
+
+quit

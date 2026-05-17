@@ -1,0 +1,51 @@
+[step 1] reading per-segment weights from snapshot...
+  10254 segments
+
+[step 2] parallel featurization across 32 workers...
+  iterations to process: 116
+  10/116 iters processed, 3080 frames so far (59s elapsed)
+  20/116 iters processed, 9820 frames so far (76s elapsed)
+  30/116 iters processed, 18460 frames so far (158s elapsed)
+  40/116 iters processed, 27620 frames so far (196s elapsed)
+  50/116 iters processed, 37020 frames so far (230s elapsed)
+  60/116 iters processed, 46760 frames so far (318s elapsed)
+  70/116 iters processed, 56680 frames so far (350s elapsed)
+  80/116 iters processed, 66180 frames so far (377s elapsed)
+  90/116 iters processed, 75660 frames so far (469s elapsed)
+  100/116 iters processed, 85280 frames so far (479s elapsed)
+  110/116 iters processed, 96120 frames so far (486s elapsed)
+  total: 102540 frames in 497s
+  feature matrix: (102540, 135)
+  weighted sum: 11.40
+  bound fraction (weighted): 0.003
+  ✓ saved
+
+[step 3] PCA...
+  variance ratio (first 5): ['0.301', '0.242', '0.129', '0.069', '0.049']
+  cumulative through PC5: 0.791
+
+[step 4] weighted 2D landscape...
+  ✓ landscape figures saved
+
+[step 5] weighted k-means clustering (k=10)...
+
+  cluster   n_frames   sum_weight   pop%   bound%
+        0       6296    1.202e+00   10.5    0.00
+        1       5348    1.111e+00    9.7    0.00
+        2       8552    1.059e+00    9.3    0.00
+        3       3640    1.723e+00   15.1    0.00
+        4      14023    9.569e-01    8.4    0.00
+        5      13526    1.120e+00    9.8    0.00
+        6      16683    1.831e+00   16.1    0.00
+        7       5639    2.525e-01    2.2    0.00
+        8       9691    1.594e+00   14.0    0.00
+        9      19142    5.507e-01    4.8    6.12
+
+[step 6] extracting medoid PDBs...
+  ✓ extracted 10 cluster medoids
+
+[step 7] per-cluster contact frequency...
+  ✓ saved figures/per_cluster_contacts.png
+
+[done] all outputs in /home/anugraha/IDP/conformational_ensemble
+[done] Sun May 17 02:26:09 UTC 2026

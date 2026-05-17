@@ -1,0 +1,38 @@
+## α-syn (c09 receptor) + cand 4 (benzothiophene-piperidine-piperazine, +1)
+## solvated with TIP4P-D, neutralized + 0.1 M NaCl, for pose-persistence MD.
+
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/cmd
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/parm
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/lib
+
+source leaprc.protein.ff99SBdisp
+source leaprc.water.tip4pd_disp
+source leaprc.gaff2
+
+set default PBradii mbondi3
+set default FlexibleWater on
+
+# --- α-syn in c09 conformation (heavy atoms only — re-add Hs) ---
+asyn = loadpdb /home/anugraha/IDP/md_cand4/asyn_c09_noFAS.pdb
+
+# --- Cand 4 ligand: GAFF2 params + AM1-BCC charges (placed at docked pose) ---
+loadamberparams /home/anugraha/IDP/md_cand4/cand4.frcmod
+LIG = loadmol2 /home/anugraha/IDP/md_cand4/cand4_gaff2.mol2
+
+# --- Combine ---
+complex = combine { asyn LIG }
+
+# --- Solvate (TIP4PDBOX template, 10 Å buffer) ---
+solvateBox complex TIP4PDBOX 10.0
+
+# --- Neutralize + 0.1 M NaCl ---
+addIonsRand complex Na+ 0
+addIonsRand complex Cl- 0
+addIonsRand complex Na+ 80
+addIonsRand complex Cl- 80
+
+charge complex
+
+saveAmberParm complex complex_cand4.prmtop complex_cand4.rst7
+savepdb complex complex_cand4.pdb
+quit

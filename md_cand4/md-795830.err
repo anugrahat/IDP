@@ -1,0 +1,96 @@
++ cd /home/anugraha/IDP/md_cand4
++ module load amber/24
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ '[' -n '' ']'
+++ /usr/bin/tclsh /software/modules/4.6.1/ucdhpc-20.04/libexec/modulecmd.tcl bash load amber/24
+Module amber-24-ucdhpc-20.04 loaded.
+
+NOTE, by loading this module, or using this software (Amber24 + AmberTools25), you agree to
+abide by the AMBER24 Software License, as shown on: http://ambermd.org/LicenseAmber22.pdf
+
++ eval 'MODULES_LMPREREQ=slurm/23.02.7\&cuda/11.8.0:openmpi/4.1.5\&hwloc/2.9.3\&libevent/2.1.12-stable\&ucx/1.14.1\&pmix/4.2.6:amber/24\&cuda/11.8.0;' export 'MODULES_LMPREREQ;
+LD_LIBRARY_PATH=/software/amber/24/ucdhpc-20.04/ambertools25/lib:/software/openmpi/4.1.5/ucdhpc-20.04/lib:/software/pmix/4.2.6/ucdhpc-20.04/lib:/software/ucx/1.14.1/ucdhpc-20.04/lib:/software/libevent/2.1.12-stable/ucdhpc-20.04/lib:/software/hwloc/2.9.3/ucdhpc-20.04/lib:/software/cuda/11.8.0/ucdhpc-20.04/lib64/stubs:/software/cuda/11.8.0/ucdhpc-20.04/lib64;' export 'LD_LIBRARY_PATH;
+LOADEDMODULES=cuda/11.8.0:slurm/23.02.7:hwloc/2.9.3:libevent/2.1.12-stable:ucx/1.14.1:pmix/4.2.6:openmpi/4.1.5:amber/24;' export 'LOADEDMODULES;
+_LMFILES_=/software/modules/4.6.1/ucdhpc-20.04/modulefiles/cuda/11.8.0:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/slurm/23.02.7:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/hwloc/2.9.3:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/libevent/2.1.12-stable:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/ucx/1.14.1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/pmix/4.2.6:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/openmpi/4.1.5:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/amber/24;' export '_LMFILES_;
+PMEMDHOME=/software/amber/24/ucdhpc-20.04/pmemd24;' export 'PMEMDHOME;
+QUICK_BASIS=/software/amber/24/ucdhpc-20.04/ambertools25/AmberTools/src/quick/basis;' export 'QUICK_BASIS;
+PYTHONPATH=/software/amber/24/ucdhpc-20.04/ambertools25/lib/python3.12/site-packages;' export 'PYTHONPATH;
+AMBERHOME=/software/amber/24/ucdhpc-20.04/ambertools25;' export 'AMBERHOME;
+MODULES_LMPREREQ_modshare=amber/24\&cuda/11.8.0:1:slurm/23.02.7\&cuda/11.8.0:1:openmpi/4.1.5\&hwloc/2.9.3\&libevent/2.1.12-stable\&ucx/1.14.1\&pmix/4.2.6:1;' export 'MODULES_LMPREREQ_modshare;
+LD_LIBRARY_PATH_modshare=/software/amber/24/ucdhpc-20.04/ambertools25/lib:1:/software/ucx/1.14.1/ucdhpc-20.04/lib:1:/software/libevent/2.1.12-stable/ucdhpc-20.04/lib:1:/software/hwloc/2.9.3/ucdhpc-20.04/lib:1:/software/cuda/11.8.0/ucdhpc-20.04/lib64/stubs:1:/software/cuda/11.8.0/ucdhpc-20.04/lib64:1:/software/openmpi/4.1.5/ucdhpc-20.04/lib:1:/software/pmix/4.2.6/ucdhpc-20.04/lib:1;' export 'LD_LIBRARY_PATH_modshare;
+_LMFILES__modshare=/software/modules/4.6.1/ucdhpc-20.04/modulefiles/cuda/11.8.0:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/hwloc/2.9.3:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/libevent/2.1.12-stable:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/ucx/1.14.1:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/amber/24:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/slurm/23.02.7:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/pmix/4.2.6:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/openmpi/4.1.5:1;' export '_LMFILES__modshare;
+LOADEDMODULES_modshare=amber/24:1:slurm/23.02.7:1:pmix/4.2.6:1:openmpi/4.1.5:1:cuda/11.8.0:1:hwloc/2.9.3:1:libevent/2.1.12-stable:1:ucx/1.14.1:1;' export 'LOADEDMODULES_modshare;
+MODULES_LMSOURCESH=amber/24\&bash\' '/software/amber/24/ucdhpc-20.04/pmemd24/amber.sh\|prepend-path\' 'PATH\' '/software/amber/24/ucdhpc-20.04/pmemd24/bin\|setenv\' 'PMEMDHOME\' '/software/amber/24/ucdhpc-20.04/pmemd24\&bash\' '/software/amber/24/ucdhpc-20.04/ambertools25/amber.sh\|prepend-path\' 'LD_LIBRARY_PATH\' '/software/amber/24/ucdhpc-20.04/ambertools25/lib\|prepend-path\' 'PATH\' '/software/amber/24/ucdhpc-20.04/ambertools25/bin\|setenv\' 'AMBERHOME\' '/software/amber/24/ucdhpc-20.04/ambertools25\|setenv\' 'PERL5LIB\' '/software/amber/24/ucdhpc-20.04/ambertools25/lib/perl\|setenv\' 'PYTHONPATH\' '/software/amber/24/ucdhpc-20.04/ambertools25/lib/python3.12/site-packages\|setenv\' 'QUICK_BASIS\' '/software/amber/24/ucdhpc-20.04/ambertools25/AmberTools/src/quick/basis;' export 'MODULES_LMSOURCESH;
+PATH=/software/amber/24/ucdhpc-20.04/ambertools25/bin:/software/amber/24/ucdhpc-20.04/pmemd24/bin:/home/anugraha/.local/bin:/software/openmpi/4.1.5/ucdhpc-20.04/bin:/software/hwloc/2.9.3/ucdhpc-20.04/bin:/software/slurm/23.02.7/ucdhpc-20.04/sbin:/software/slurm/23.02.7/ucdhpc-20.04/bin:/software/cuda/11.8.0/ucdhpc-20.04/bin:/software/modules/4.6.1/ucdhpc-20.04//bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin;' export 'PATH;
+MODULES_LMSOURCESH_modshare=amber/24\&bash\' '/software/amber/24/ucdhpc-20.04/pmemd24/amber.sh\|prepend-path\' 'PATH\' '/software/amber/24/ucdhpc-20.04/pmemd24/bin\|setenv\' 'PMEMDHOME\' '/software/amber/24/ucdhpc-20.04/pmemd24\&bash\' '/software/amber/24/ucdhpc-20.04/ambertools25/amber.sh\|prepend-path\' 'LD_LIBRARY_PATH\' '/software/amber/24/ucdhpc-20.04/ambertools25/lib\|prepend-path\' 'PATH\' '/software/amber/24/ucdhpc-20.04/ambertools25/bin\|setenv\' 'AMBERHOME\' '/software/amber/24/ucdhpc-20.04/ambertools25\|setenv\' 'PERL5LIB\' '/software/amber/24/ucdhpc-20.04/ambertools25/lib/perl\|setenv\' 'PYTHONPATH\' '/software/amber/24/ucdhpc-20.04/ambertools25/lib/python3.12/site-packages\|setenv\' 'QUICK_BASIS\' '/software/amber/24/ucdhpc-20.04/ambertools25/AmberTools/src/quick/basis:1;' export 'MODULES_LMSOURCESH_modshare;
+PATH_modshare=/usr/bin:1:/software/amber/24/ucdhpc-20.04/ambertools25/bin:1:/software/cuda/11.8.0/ucdhpc-20.04/bin:1:/usr/local/bin:1:/software/amber/24/ucdhpc-20.04/pmemd24/bin:1:/software/slurm/23.02.7/ucdhpc-20.04/bin:1:/software/openmpi/4.1.5/ucdhpc-20.04/bin:1:/home/anugraha/.local/bin:1:/software/hwloc/2.9.3/ucdhpc-20.04/bin:1:/software/modules/4.6.1/ucdhpc-20.04//bin:1:/software/slurm/23.02.7/ucdhpc-20.04/sbin:1:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin:1:/bin:1:/snap/bin:1:/opt/puppetlabs/bin:1:/sbin:1:/usr/sbin:1:/usr/games:1:/usr/local/sbin:1:/usr/local/games:1;' export 'PATH_modshare;
+PERL5LIB=/software/amber/24/ucdhpc-20.04/ambertools25/lib/perl;' export 'PERL5LIB;
+test' '0;'
+++ MODULES_LMPREREQ='slurm/23.02.7&cuda/11.8.0:openmpi/4.1.5&hwloc/2.9.3&libevent/2.1.12-stable&ucx/1.14.1&pmix/4.2.6:amber/24&cuda/11.8.0'
+++ export MODULES_LMPREREQ
+++ LD_LIBRARY_PATH=/software/amber/24/ucdhpc-20.04/ambertools25/lib:/software/openmpi/4.1.5/ucdhpc-20.04/lib:/software/pmix/4.2.6/ucdhpc-20.04/lib:/software/ucx/1.14.1/ucdhpc-20.04/lib:/software/libevent/2.1.12-stable/ucdhpc-20.04/lib:/software/hwloc/2.9.3/ucdhpc-20.04/lib:/software/cuda/11.8.0/ucdhpc-20.04/lib64/stubs:/software/cuda/11.8.0/ucdhpc-20.04/lib64
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=cuda/11.8.0:slurm/23.02.7:hwloc/2.9.3:libevent/2.1.12-stable:ucx/1.14.1:pmix/4.2.6:openmpi/4.1.5:amber/24
+++ export LOADEDMODULES
+++ _LMFILES_=/software/modules/4.6.1/ucdhpc-20.04/modulefiles/cuda/11.8.0:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/slurm/23.02.7:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/hwloc/2.9.3:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/libevent/2.1.12-stable:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/ucx/1.14.1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/pmix/4.2.6:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/openmpi/4.1.5:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/amber/24
+++ export _LMFILES_
+++ PMEMDHOME=/software/amber/24/ucdhpc-20.04/pmemd24
+++ export PMEMDHOME
+++ QUICK_BASIS=/software/amber/24/ucdhpc-20.04/ambertools25/AmberTools/src/quick/basis
+++ export QUICK_BASIS
+++ PYTHONPATH=/software/amber/24/ucdhpc-20.04/ambertools25/lib/python3.12/site-packages
+++ export PYTHONPATH
+++ AMBERHOME=/software/amber/24/ucdhpc-20.04/ambertools25
+++ export AMBERHOME
+++ MODULES_LMPREREQ_modshare='amber/24&cuda/11.8.0:1:slurm/23.02.7&cuda/11.8.0:1:openmpi/4.1.5&hwloc/2.9.3&libevent/2.1.12-stable&ucx/1.14.1&pmix/4.2.6:1'
+++ export MODULES_LMPREREQ_modshare
+++ LD_LIBRARY_PATH_modshare=/software/amber/24/ucdhpc-20.04/ambertools25/lib:1:/software/ucx/1.14.1/ucdhpc-20.04/lib:1:/software/libevent/2.1.12-stable/ucdhpc-20.04/lib:1:/software/hwloc/2.9.3/ucdhpc-20.04/lib:1:/software/cuda/11.8.0/ucdhpc-20.04/lib64/stubs:1:/software/cuda/11.8.0/ucdhpc-20.04/lib64:1:/software/openmpi/4.1.5/ucdhpc-20.04/lib:1:/software/pmix/4.2.6/ucdhpc-20.04/lib:1
+++ export LD_LIBRARY_PATH_modshare
+++ _LMFILES__modshare=/software/modules/4.6.1/ucdhpc-20.04/modulefiles/cuda/11.8.0:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/hwloc/2.9.3:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/libevent/2.1.12-stable:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/ucx/1.14.1:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/amber/24:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/slurm/23.02.7:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/pmix/4.2.6:1:/software/modules/4.6.1/ucdhpc-20.04/modulefiles/openmpi/4.1.5:1
+++ export _LMFILES__modshare
+++ LOADEDMODULES_modshare=amber/24:1:slurm/23.02.7:1:pmix/4.2.6:1:openmpi/4.1.5:1:cuda/11.8.0:1:hwloc/2.9.3:1:libevent/2.1.12-stable:1:ucx/1.14.1:1
+++ export LOADEDMODULES_modshare
+++ MODULES_LMSOURCESH='amber/24&bash /software/amber/24/ucdhpc-20.04/pmemd24/amber.sh|prepend-path PATH /software/amber/24/ucdhpc-20.04/pmemd24/bin|setenv PMEMDHOME /software/amber/24/ucdhpc-20.04/pmemd24&bash /software/amber/24/ucdhpc-20.04/ambertools25/amber.sh|prepend-path LD_LIBRARY_PATH /software/amber/24/ucdhpc-20.04/ambertools25/lib|prepend-path PATH /software/amber/24/ucdhpc-20.04/ambertools25/bin|setenv AMBERHOME /software/amber/24/ucdhpc-20.04/ambertools25|setenv PERL5LIB /software/amber/24/ucdhpc-20.04/ambertools25/lib/perl|setenv PYTHONPATH /software/amber/24/ucdhpc-20.04/ambertools25/lib/python3.12/site-packages|setenv QUICK_BASIS /software/amber/24/ucdhpc-20.04/ambertools25/AmberTools/src/quick/basis'
+++ export MODULES_LMSOURCESH
+++ PATH=/software/amber/24/ucdhpc-20.04/ambertools25/bin:/software/amber/24/ucdhpc-20.04/pmemd24/bin:/home/anugraha/.local/bin:/software/openmpi/4.1.5/ucdhpc-20.04/bin:/software/hwloc/2.9.3/ucdhpc-20.04/bin:/software/slurm/23.02.7/ucdhpc-20.04/sbin:/software/slurm/23.02.7/ucdhpc-20.04/bin:/software/cuda/11.8.0/ucdhpc-20.04/bin:/software/modules/4.6.1/ucdhpc-20.04//bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin
+++ export PATH
+++ MODULES_LMSOURCESH_modshare='amber/24&bash /software/amber/24/ucdhpc-20.04/pmemd24/amber.sh|prepend-path PATH /software/amber/24/ucdhpc-20.04/pmemd24/bin|setenv PMEMDHOME /software/amber/24/ucdhpc-20.04/pmemd24&bash /software/amber/24/ucdhpc-20.04/ambertools25/amber.sh|prepend-path LD_LIBRARY_PATH /software/amber/24/ucdhpc-20.04/ambertools25/lib|prepend-path PATH /software/amber/24/ucdhpc-20.04/ambertools25/bin|setenv AMBERHOME /software/amber/24/ucdhpc-20.04/ambertools25|setenv PERL5LIB /software/amber/24/ucdhpc-20.04/ambertools25/lib/perl|setenv PYTHONPATH /software/amber/24/ucdhpc-20.04/ambertools25/lib/python3.12/site-packages|setenv QUICK_BASIS /software/amber/24/ucdhpc-20.04/ambertools25/AmberTools/src/quick/basis:1'
+++ export MODULES_LMSOURCESH_modshare
+++ PATH_modshare=/usr/bin:1:/software/amber/24/ucdhpc-20.04/ambertools25/bin:1:/software/cuda/11.8.0/ucdhpc-20.04/bin:1:/usr/local/bin:1:/software/amber/24/ucdhpc-20.04/pmemd24/bin:1:/software/slurm/23.02.7/ucdhpc-20.04/bin:1:/software/openmpi/4.1.5/ucdhpc-20.04/bin:1:/home/anugraha/.local/bin:1:/software/hwloc/2.9.3/ucdhpc-20.04/bin:1:/software/modules/4.6.1/ucdhpc-20.04//bin:1:/software/slurm/23.02.7/ucdhpc-20.04/sbin:1:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin:1:/bin:1:/snap/bin:1:/opt/puppetlabs/bin:1:/sbin:1:/usr/sbin:1:/usr/games:1:/usr/local/sbin:1:/usr/local/games:1
+++ export PATH_modshare
+++ PERL5LIB=/software/amber/24/ucdhpc-20.04/ambertools25/lib/perl
+++ export PERL5LIB
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
+++ command -v pmemd.cuda
++ export PMEMD=/software/amber/24/ucdhpc-20.04/pmemd24/bin/pmemd.cuda
++ PMEMD=/software/amber/24/ucdhpc-20.04/pmemd24/bin/pmemd.cuda
++ echo 'using PMEMD=/software/amber/24/ucdhpc-20.04/pmemd24/bin/pmemd.cuda'
++ nvidia-smi -L
++ TOP=complex_cand4.prmtop
++ INI=complex_cand4.rst7
++ /software/amber/24/ucdhpc-20.04/pmemd24/bin/pmemd.cuda -O -i min1.in -p complex_cand4.prmtop -c complex_cand4.rst7 -ref complex_cand4.rst7 -o min1.out -r min1.rst7 -inf min1.mdinfo
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
++ /software/amber/24/ucdhpc-20.04/pmemd24/bin/pmemd.cuda -O -i min2.in -p complex_cand4.prmtop -c min1.rst7 -o min2.out -r min2.rst7 -inf min2.mdinfo
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
++ /software/amber/24/ucdhpc-20.04/pmemd24/bin/pmemd.cuda -O -i heat.in -p complex_cand4.prmtop -c min2.rst7 -ref min2.rst7 -o heat.out -r heat.rst7 -x heat.nc -inf heat.mdinfo
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
++ /software/amber/24/ucdhpc-20.04/pmemd24/bin/pmemd.cuda -O -i equil_npt.in -p complex_cand4.prmtop -c heat.rst7 -ref heat.rst7 -o equil.out -r equil.rst7 -x equil.nc -inf equil.mdinfo
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
++ /software/amber/24/ucdhpc-20.04/pmemd24/bin/pmemd.cuda -O -i prod.in -p complex_cand4.prmtop -c equil.rst7 -o prod.out -r prod.rst7 -x prod.nc -inf prod.mdinfo
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+++ date
++ echo '[done] Sun May 17 06:54:43 UTC 2026'

@@ -1,0 +1,33 @@
+## α-syn (c09 receptor, no fasudil) + fasudil (docked into c09)
+## Same TIP4P-D solvation as cand 4 setup — apples to apples.
+
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/cmd
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/parm
+addPath /home/anugraha/IDP/inputs/ff/Force-Fields/Amber_FFs/a99SBdisp/lib
+
+source leaprc.protein.ff99SBdisp
+source leaprc.water.tip4pd_disp
+source leaprc.gaff2
+
+set default PBradii mbondi3
+set default FlexibleWater on
+
+asyn = loadpdb /home/anugraha/IDP/md_cand4/asyn_c09_noFAS.pdb
+
+loadamberparams /home/anugraha/IDP/md_fasudil/fasudil.frcmod
+LIG = loadmol2 /home/anugraha/IDP/md_fasudil/fasudil_gaff2.mol2
+
+complex = combine { asyn LIG }
+
+solvateBox complex TIP4PDBOX 10.0
+
+addIonsRand complex Na+ 0
+addIonsRand complex Cl- 0
+addIonsRand complex Na+ 80
+addIonsRand complex Cl- 80
+
+charge complex
+
+saveAmberParm complex complex_fasudil.prmtop complex_fasudil.rst7
+savepdb complex complex_fasudil.pdb
+quit

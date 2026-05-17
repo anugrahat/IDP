@@ -1,0 +1,19 @@
+## Single multi-MODEL PDB version
+parm /home/anugraha/IDP/md_cand4/complex_cand4.prmtop
+trajin /home/anugraha/IDP/md_cand4/prod.nc 1 last 5
+
+autoimage :1-141 firstatom
+rms first :1-140 & @CA
+
+# Ligand only — single PDB with all frames as MODELs
+strip !:UNL
+trajout /home/anugraha/IDP/md_cand4/cand4_ligand_traj.pdb pdb model
+run
+
+# Reset + site context
+unstrip
+strip !(:UNL,125,130,133,134,135,136,137)
+trajout /home/anugraha/IDP/md_cand4/cand4_with_site_traj.pdb pdb model
+run
+
+quit

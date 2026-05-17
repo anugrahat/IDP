@@ -1,0 +1,221 @@
++ cd /home/anugraha/IDP/conformational_ensemble
++ source /software/conda3/4.X/etc/profile.d/conda.sh
+++ export CONDA_EXE=/share/software/conda3/4.13.0/bin/conda
+++ CONDA_EXE=/share/software/conda3/4.13.0/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/share/software/conda3/4.13.0/bin/python
+++ CONDA_PYTHON_EXE=/share/software/conda3/4.13.0/bin/python
+++ '[' -z '' ']'
+++ export CONDA_SHLVL=0
+++ CONDA_SHLVL=0
+++ '[' -n '' ']'
+++++ dirname /share/software/conda3/4.13.0/bin/conda
++++ dirname /share/software/conda3/4.13.0/bin
+++ PATH=/share/software/conda3/4.13.0/condabin:/home/anugraha/.local/bin:/software/openmpi/4.1.5/ucdhpc-20.04/bin:/software/hwloc/2.9.3/ucdhpc-20.04/bin:/software/slurm/23.02.7/ucdhpc-20.04/sbin:/software/slurm/23.02.7/ucdhpc-20.04/bin:/software/cuda/11.8.0/ucdhpc-20.04/bin:/software/modules/4.6.1/ucdhpc-20.04//bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin
+++ export PATH
+++ '[' -z '' ']'
+++ PS1=
++ conda activate openmm_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate openmm_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate openmm_env
+++ __add_sys_prefix_to_path
+++ '[' -n '' ']'
++++ dirname /share/software/conda3/4.13.0/bin/conda
+++ SYSP=/share/software/conda3/4.13.0/bin
++++ dirname /share/software/conda3/4.13.0/bin
+++ SYSP=/share/software/conda3/4.13.0
+++ '[' -n '' ']'
+++ PATH=/share/software/conda3/4.13.0/bin:/share/software/conda3/4.13.0/condabin:/home/anugraha/.local/bin:/software/openmpi/4.1.5/ucdhpc-20.04/bin:/software/hwloc/2.9.3/ucdhpc-20.04/bin:/software/slurm/23.02.7/ucdhpc-20.04/sbin:/software/slurm/23.02.7/ucdhpc-20.04/bin:/software/cuda/11.8.0/ucdhpc-20.04/bin:/software/modules/4.6.1/ucdhpc-20.04//bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin
+++ export PATH
+++ /share/software/conda3/4.13.0/bin/conda shell.posix activate openmm_env
++ ask_conda='PS1='\''(openmm_env) '\''
+export PATH='\''/home/anugraha/.conda/envs/openmm_env/bin:/share/software/conda3/4.13.0/condabin:/home/anugraha/.local/bin:/software/openmpi/4.1.5/ucdhpc-20.04/bin:/software/hwloc/2.9.3/ucdhpc-20.04/bin:/software/slurm/23.02.7/ucdhpc-20.04/sbin:/software/slurm/23.02.7/ucdhpc-20.04/bin:/software/cuda/11.8.0/ucdhpc-20.04/bin:/software/modules/4.6.1/ucdhpc-20.04/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin'\''
+export CONDA_PREFIX='\''/home/anugraha/.conda/envs/openmm_env'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''openmm_env'\''
+export CONDA_PROMPT_MODIFIER='\''(openmm_env) '\''
+export CONDA_EXE='\''/share/software/conda3/4.13.0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/share/software/conda3/4.13.0/bin/python'\''
+. "/home/anugraha/.conda/envs/openmm_env/etc/conda/activate.d/libglib_activate.sh"'
++ eval 'PS1='\''(openmm_env) '\''
+export PATH='\''/home/anugraha/.conda/envs/openmm_env/bin:/share/software/conda3/4.13.0/condabin:/home/anugraha/.local/bin:/software/openmpi/4.1.5/ucdhpc-20.04/bin:/software/hwloc/2.9.3/ucdhpc-20.04/bin:/software/slurm/23.02.7/ucdhpc-20.04/sbin:/software/slurm/23.02.7/ucdhpc-20.04/bin:/software/cuda/11.8.0/ucdhpc-20.04/bin:/software/modules/4.6.1/ucdhpc-20.04/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin'\''
+export CONDA_PREFIX='\''/home/anugraha/.conda/envs/openmm_env'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''openmm_env'\''
+export CONDA_PROMPT_MODIFIER='\''(openmm_env) '\''
+export CONDA_EXE='\''/share/software/conda3/4.13.0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/share/software/conda3/4.13.0/bin/python'\''
+. "/home/anugraha/.conda/envs/openmm_env/etc/conda/activate.d/libglib_activate.sh"'
+++ PS1='(openmm_env) '
+++ export PATH=/home/anugraha/.conda/envs/openmm_env/bin:/share/software/conda3/4.13.0/condabin:/home/anugraha/.local/bin:/software/openmpi/4.1.5/ucdhpc-20.04/bin:/software/hwloc/2.9.3/ucdhpc-20.04/bin:/software/slurm/23.02.7/ucdhpc-20.04/sbin:/software/slurm/23.02.7/ucdhpc-20.04/bin:/software/cuda/11.8.0/ucdhpc-20.04/bin:/software/modules/4.6.1/ucdhpc-20.04/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin
+++ PATH=/home/anugraha/.conda/envs/openmm_env/bin:/share/software/conda3/4.13.0/condabin:/home/anugraha/.local/bin:/software/openmpi/4.1.5/ucdhpc-20.04/bin:/software/hwloc/2.9.3/ucdhpc-20.04/bin:/software/slurm/23.02.7/ucdhpc-20.04/sbin:/software/slurm/23.02.7/ucdhpc-20.04/bin:/software/cuda/11.8.0/ucdhpc-20.04/bin:/software/modules/4.6.1/ucdhpc-20.04/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/anugraha/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin
+++ export CONDA_PREFIX=/home/anugraha/.conda/envs/openmm_env
+++ CONDA_PREFIX=/home/anugraha/.conda/envs/openmm_env
+++ export CONDA_SHLVL=1
+++ CONDA_SHLVL=1
+++ export CONDA_DEFAULT_ENV=openmm_env
+++ CONDA_DEFAULT_ENV=openmm_env
+++ export 'CONDA_PROMPT_MODIFIER=(openmm_env) '
+++ CONDA_PROMPT_MODIFIER='(openmm_env) '
+++ export CONDA_EXE=/share/software/conda3/4.13.0/bin/conda
+++ CONDA_EXE=/share/software/conda3/4.13.0/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/share/software/conda3/4.13.0/bin/python
+++ CONDA_PYTHON_EXE=/share/software/conda3/4.13.0/bin/python
+++ . /home/anugraha/.conda/envs/openmm_env/etc/conda/activate.d/libglib_activate.sh
++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
++++ export GSETTINGS_SCHEMA_DIR=/home/anugraha/.conda/envs/openmm_env/share/glib-2.0/schemas
++++ GSETTINGS_SCHEMA_DIR=/home/anugraha/.conda/envs/openmm_env/share/glib-2.0/schemas
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ export PCA_WORKERS=32
++ PCA_WORKERS=32
++ python3 -u pca_analysis_parallel.py
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/topology/TOPParser.py:306: UserWarning: Unknown ATOMIC_NUMBER value found for some atoms, these have been given an empty element record. If needed these can be guessed using MDAnalysis.topology.guessers.
+  warnings.warn(msg)
+/home/anugraha/.local/lib/python3.9/site-packages/MDAnalysis/core/universe.py:147: UserWarning: No coordinate reader found for /home/anugraha/IDP/build/complex.prmtop. Skipping this file.
+  warnings.warn('No coordinate reader found for {}. Skipping '
+++ date
++ echo '[done] Sun May 17 02:26:09 UTC 2026'
